@@ -4,3 +4,5 @@ Obtén la fecha REAL ejecutando `date +%Y-%m-%d` (no la inventes). Luego ejecuta
 2. APPEND al journal de hoy (`## Hecho` / `## Decisiones` / `## Mañana`);
    ACTUALIZA `memory/TASKS.md`; REESCRIBE `memory/STATE.md`; PROMOCIÓN a `memory/knowledge/` si aplica.
 3. `git add memory/ && git commit -m "memoria: cierre <HOY>"` (SOLO `memory/`).
+4. Ejecuta `git status --short`: si hay cambios FUERA de `memory/`, avisa al usuario en una línea
+   (sin commitearlos tú).

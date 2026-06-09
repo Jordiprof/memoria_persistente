@@ -1,8 +1,30 @@
-# Caché/estado de la app Obsidian (no versionar)
+# === Entornos virtuales / dependencias ===
+venv/
+.venv/
+env/
+ENV/
+node_modules/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# === Secretos / variables de entorno ===
+.env
+.env.*
+*.local
+
+# === Caché/estado de la app Obsidian ===
 .obsidian/workspace*
 .obsidian/cache
 .obsidian/.trash/
 
-# Sistema operativo
+# === Sistema operativo ===
 .DS_Store
 Thumbs.db

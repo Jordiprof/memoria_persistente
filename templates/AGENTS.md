@@ -1,5 +1,5 @@
 # AGENTS.md — Protocolo de Memoria Persistente
-<!-- Version: 1.0.0 -->
+<!-- Version: 1.0.1 -->
 
 > Este archivo es la **fuente de verdad** del comportamiento de memoria de este proyecto.
 > Cualquier agente (Claude Code, Codex, OpenCode, Gemini CLI, Cursor) debe leerlo y seguirlo.
@@ -75,6 +75,8 @@ falta). La `{HORA}` la inyecta el comando; nunca la inventes. **No** hagas commi
      arquitectura), añádelo/actualízalo en `memory/knowledge/` además de dejar la traza en el journal.
 3. **Commit:** `git add memory/ && git commit -m "memoria: cierre AAAA-MM-DD"` (SOLO `memory/`,
    nunca el código en curso del usuario).
+4. **Aviso de código sin commitear:** ejecuta `git status --short`. Si hay cambios FUERA de
+   `memory/` (tu código, `AGENTS.md`, `.gitignore`…), avísalo en una línea — NO los commitees tú.
 
 **Restricciones del cierre:** nada de saludos ni explicaciones fuera del razonamiento de 3 líneas;
 append-only; STATE corto (si crece, resume y manda el detalle al journal).

@@ -11,5 +11,7 @@ Ejecuta el **RITUAL DE CIERRE** de `./AGENTS.md` al pie de la letra:
    ACTUALIZA `memory/TASKS.md`; REESCRIBE `memory/STATE.md` (breve, ≤ 20 líneas);
    PROMOCIÓN a `memory/knowledge/` si surgió algún hecho duradero.
 3. `git add memory/ && git commit -m "memoria: cierre <HOY>"` (SOLO `memory/`).
+4. Ejecuta `git status --short`: si hay cambios FUERA de `memory/`, avisa al usuario en una línea
+   (sin commitearlos tú).
 
 Usa únicamente la fecha/hora reales de arriba. Nada de saludos ni texto fuera del razonamiento.
