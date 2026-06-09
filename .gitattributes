@@ -1,0 +1,3 @@
+# Normaliza saltos de línea a LF en el repo.
+# Evita que install.sh (y los .md/.toml) se rompan al clonar en Linux/macOS.
+* text=auto eol=lf
