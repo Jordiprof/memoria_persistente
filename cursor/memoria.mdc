@@ -1,0 +1,18 @@
+---
+description: Protocolo de memoria persistente. Usar SOLO si el usuario escribe explícitamente INICIO_SESION o GENERAR_MEMORIA_FINAL. En cualquier otro caso, ignorar por completo.
+alwaysApply: false
+---
+# Memoria persistente (regla MANUAL)
+
+Esta regla está **inactiva por defecto**. NO la apliques mientras se escribe o refactoriza
+código: no vigiles ni toques `memory/` en cada edición.
+
+Actívala **ÚNICAMENTE** cuando el usuario escriba, de forma explícita, una de estas keywords:
+
+- `INICIO_SESION` → ejecuta el **RITUAL DE INICIO** de `AGENTS.md` de este proyecto.
+- `GENERAR_MEMORIA_FINAL` → ejecuta el **RITUAL DE CIERRE** de `AGENTS.md`.
+
+Fuera de esos dos casos exactos, ignora la memoria por completo (no leas ni escribas `memory/`).
+
+El protocolo vive en `AGENTS.md`; no lo dupliques aquí. Para la fecha/hora, ejecuta `date` en la
+terminal y usa la real del sistema; nunca la inventes.

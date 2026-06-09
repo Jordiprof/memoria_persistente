@@ -1,0 +1,15 @@
+description = "Inicia sesión de memoria: carga estado y propone el plan del día"
+prompt = """
+Contexto temporal real del sistema (no inventes fechas):
+- Hoy: !{date +%Y-%m-%d}
+- Hora: !{date +%H:%M}
+
+Plantillas del kit (para bootstrap): __KIT_HOME__/templates/
+
+Ejecuta el RITUAL DE INICIO de ./AGENTS.md al pie de la letra.
+
+Si NO existe ./AGENTS.md o ./memory/, haz bootstrap: copia __KIT_HOME__/templates/AGENTS.md a
+./AGENTS.md; crea ./memory/ con STATE.md y TASKS.md (sustituyendo {{PROYECTO}} por el nombre de
+la carpeta y {{FECHA}} por hoy), knowledge/README.md y journal/<HOY>.md; copia gitignore a
+./.gitignore si falta. Luego avisa en una línea y continúa con el ritual.
+"""

@@ -1,0 +1,8 @@
+# Caché/estado de la app Obsidian (no versionar)
+.obsidian/workspace*
+.obsidian/cache
+.obsidian/.trash/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
